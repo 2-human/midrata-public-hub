@@ -97,7 +97,7 @@ window.HUB = {
     forecast:   { title: "Lead forecast", sub: "Modeled from financial and crypto-vertical Meta benchmarks", tbBadge: "Vertical model" },
     ads:        { title: "Meta ad sets", sub: "Two messages, two routes: to an article, or straight to the landing page" },
     cluster:    { title: "Content cluster", sub: "How the ads, articles and landing pages connect, per value proposition" },
-    website:    { title: "Microsite", sub: "Articles map to the ads and lead to value-proposition landing pages", open: "https://learn.midrata.com/", openLabel: "Open the microsite ↗", tbBadge: "Prototype", infoPane: true },
+    website:    { title: "Microsite", sub: "Articles map to the ads and lead to value-proposition landing pages", open: "https://2-human.github.io/midrata-public-microsite/", openLabel: "Open the microsite ↗", tbBadge: "Prototype", infoPane: true },
     social:     { title: "Organic layer", sub: "Existing Substack and video content, repurposed as top of funnel" },
     crm:        { title: "Reservations", sub: "Every reservation traced to its ad set, with self-reported investment range" },
     compliance: { title: "Compliance & standards", sub: "The legal gate, and the web-quality standards the funnel is built to", tbBadge: "GC sign-off required" },
@@ -358,7 +358,7 @@ window.HUB = {
             <div class="fb__head"><div class="fb__avatar"></div><div class="fb__who"><b>Midrata</b><span>Sponsored &middot; &#127760;</span></div></div>
             <div class="fb__text">What if your money paid you every week? 💸 No property to manage, no huge upfront capital. Here is what it actually means for an asset to pay you.</div>
             <div class="fb__media"><img src="${IMG}" alt="Midrata forest creative"></div>
-            <div class="fb__link"><div class="lk"><small>learn.midrata.com</small><b>Income you don't have to manage</b><span>A 4-minute read.</span></div><a class="fb__cta" href="#cluster" rel="noopener">Read More</a></div>
+            <div class="fb__link"><div class="lk"><small>learn.midrata.com</small><b>Income you don't have to manage</b><span>A 4-minute read.</span></div><a class="fb__cta" href="https://2-human.github.io/midrata-public-microsite/article-cashflow.html" target="_blank" rel="noopener">Read More</a></div>
             <div class="fb__react"><span>&#128077; Like</span><span>&#128172; Comment</span><span>&#10150; Share</span></div>
           </div>
         </div>
@@ -368,7 +368,7 @@ window.HUB = {
             <div class="fb__head"><div class="fb__avatar"></div><div class="fb__who"><b>Midrata</b><span>Sponsored &middot; &#127760;</span></div></div>
             <div class="fb__text">Income you don't have to manage. 🌲 A member-owned pool of real-world assets, streamed back to you and built to be spent. Reserve your place in early access.</div>
             <div class="fb__media"><img src="${IMG}" alt="Midrata forest creative"></div>
-            <div class="fb__link"><div class="lk"><small>learn.midrata.com &middot; early access</small><b>Reserve your place</b><span>No payment today.</span></div><a class="fb__cta primary" href="#website" rel="noopener">Reserve</a></div>
+            <div class="fb__link"><div class="lk"><small>learn.midrata.com &middot; early access</small><b>Reserve your place</b><span>No payment today.</span></div><a class="fb__cta primary" href="https://2-human.github.io/midrata-public-microsite/lp-cashflow.html" target="_blank" rel="noopener">Reserve</a></div>
             <div class="fb__react"><span>&#128077; Like</span><span>&#128172; Comment</span><span>&#10150; Share</span></div>
           </div>
         </div>
@@ -378,7 +378,7 @@ window.HUB = {
             <div class="fb__head"><div class="fb__avatar"></div><div class="fb__who"><b>Midrata</b><span>Sponsored &middot; &#127760;</span></div></div>
             <div class="fb__text">Taxes, inflation, debt. For most people that is extraction, not accident. 🔥 Read why the old system stopped working, and what replaces it.</div>
             <div class="fb__media"><img src="${IMG}" alt="Midrata forest creative"></div>
-            <div class="fb__link"><div class="lk"><small>learn.midrata.com</small><b>Built for a different century</b><span>A 4-minute read.</span></div><a class="fb__cta" href="#cluster" rel="noopener">Read More</a></div>
+            <div class="fb__link"><div class="lk"><small>learn.midrata.com</small><b>Built for a different century</b><span>A 4-minute read.</span></div><a class="fb__cta" href="https://2-human.github.io/midrata-public-microsite/article-freedom.html" target="_blank" rel="noopener">Read More</a></div>
             <div class="fb__react"><span>&#128077; Like</span><span>&#128172; Comment</span><span>&#10150; Share</span></div>
           </div>
         </div>
@@ -388,7 +388,7 @@ window.HUB = {
             <div class="fb__head"><div class="fb__avatar"></div><div class="fb__who"><b>Midrata</b><span>Sponsored &middot; &#127760;</span></div></div>
             <div class="fb__text">The system wasn't built for you. 🌲 A member-owned alternative grounded in real-world assets. Let's build something better. Reserve your place.</div>
             <div class="fb__media"><img src="${IMG}" alt="Midrata forest creative"></div>
-            <div class="fb__link"><div class="lk"><small>learn.midrata.com &middot; early access</small><b>Reserve your place</b><span>No payment today.</span></div><a class="fb__cta primary" href="#website" rel="noopener">Reserve</a></div>
+            <div class="fb__link"><div class="lk"><small>learn.midrata.com &middot; early access</small><b>Reserve your place</b><span>No payment today.</span></div><a class="fb__cta primary" href="https://2-human.github.io/midrata-public-microsite/lp-freedom.html" target="_blank" rel="noopener">Reserve</a></div>
             <div class="fb__react"><span>&#128077; Like</span><span>&#128172; Comment</span><span>&#10150; Share</span></div>
           </div>
         </div>
@@ -470,17 +470,17 @@ window.HUB = {
           <foreignObject x="24" y="52" width="290" height="60"><div xmlns="http://www.w3.org/1999/xhtml" class="node node--case"><a class="node__link" href="#ads"><span class="node__tag">Cash-flow &middot; article-led</span><span class="node__title">Ad &rarr; article</span></a></div></foreignObject>
           <foreignObject x="24" y="120" width="290" height="60"><div xmlns="http://www.w3.org/1999/xhtml" class="node node--case"><a class="node__link" href="#ads"><span class="node__tag">Cash-flow &middot; direct</span><span class="node__title">Ad &rarr; landing page</span></a></div></foreignObject>
           <!-- CASH-FLOW: article -->
-          <foreignObject x="360" y="66" width="244" height="86"><a xmlns="http://www.w3.org/1999/xhtml" class="node node--lp node__link" href="#website"><span class="node__tag">Article</span><span class="node__title">Income you don't have to manage</span><span class="node__meta">learn.midrata.com &rarr;</span></a></foreignObject>
+          <foreignObject x="360" y="66" width="244" height="86"><a xmlns="http://www.w3.org/1999/xhtml" class="node node--lp node__link" href="https://2-human.github.io/midrata-public-microsite/article-cashflow.html" target="_blank" rel="noopener"><span class="node__tag">Article</span><span class="node__title">Income you don't have to manage</span><span class="node__meta">learn.midrata.com &rarr;</span></a></foreignObject>
           <!-- CASH-FLOW: LP -->
-          <foreignObject x="632" y="76" width="240" height="86"><a xmlns="http://www.w3.org/1999/xhtml" class="node node--lp node__link" href="#website"><span class="node__tag">Landing page</span><span class="node__title">What if your money paid you every week?</span><span class="node__meta">Fake-door reserve &rarr;</span></a></foreignObject>
+          <foreignObject x="632" y="76" width="240" height="86"><a xmlns="http://www.w3.org/1999/xhtml" class="node node--lp node__link" href="https://2-human.github.io/midrata-public-microsite/lp-cashflow.html" target="_blank" rel="noopener"><span class="node__tag">Landing page</span><span class="node__title">What if your money paid you every week?</span><span class="node__meta">Fake-door reserve &rarr;</span></a></foreignObject>
 
           <!-- ANTI-ESTABLISHMENT: ads -->
           <foreignObject x="24" y="268" width="290" height="60"><div xmlns="http://www.w3.org/1999/xhtml" class="node node--case"><a class="node__link" href="#ads"><span class="node__tag">Anti-establishment &middot; article-led</span><span class="node__title">Ad &rarr; article</span></a></div></foreignObject>
           <foreignObject x="24" y="336" width="290" height="60"><div xmlns="http://www.w3.org/1999/xhtml" class="node node--case"><a class="node__link" href="#ads"><span class="node__tag">Anti-establishment &middot; direct</span><span class="node__title">Ad &rarr; landing page</span></a></div></foreignObject>
           <!-- ANTI-ESTABLISHMENT: article -->
-          <foreignObject x="360" y="278" width="244" height="86"><a xmlns="http://www.w3.org/1999/xhtml" class="node node--lp node__link" href="#website"><span class="node__tag">Article</span><span class="node__title">Built for a different century</span><span class="node__meta">learn.midrata.com &rarr;</span></a></foreignObject>
+          <foreignObject x="360" y="278" width="244" height="86"><a xmlns="http://www.w3.org/1999/xhtml" class="node node--lp node__link" href="https://2-human.github.io/midrata-public-microsite/article-freedom.html" target="_blank" rel="noopener"><span class="node__tag">Article</span><span class="node__title">Built for a different century</span><span class="node__meta">learn.midrata.com &rarr;</span></a></foreignObject>
           <!-- ANTI-ESTABLISHMENT: LP -->
-          <foreignObject x="632" y="288" width="240" height="86"><a xmlns="http://www.w3.org/1999/xhtml" class="node node--lp node__link" href="#website"><span class="node__tag">Landing page</span><span class="node__title">The system wasn't built for you</span><span class="node__meta">Fake-door reserve &rarr;</span></a></foreignObject>
+          <foreignObject x="632" y="288" width="240" height="86"><a xmlns="http://www.w3.org/1999/xhtml" class="node node--lp node__link" href="https://2-human.github.io/midrata-public-microsite/lp-freedom.html" target="_blank" rel="noopener"><span class="node__tag">Landing page</span><span class="node__title">The system wasn't built for you</span><span class="node__meta">Fake-door reserve &rarr;</span></a></foreignObject>
 
           <!-- CRM -->
           <foreignObject x="972" y="180" width="204" height="100"><a xmlns="http://www.w3.org/1999/xhtml" class="node node--crm node__link" style="border-style:solid;cursor:pointer" href="#crm"><span class="node__tag">CRM &middot; live</span><span class="node__title">Reservations</span><span class="node__meta">Tagged by ad set &middot; open &rarr;</span></a></foreignObject>
