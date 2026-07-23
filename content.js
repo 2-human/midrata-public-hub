@@ -35,11 +35,11 @@ window.HUB = {
 
   /* ---- AGENCY (Prota Studios; the studio running the test) ------------------ */
   agency: {
-    name: "Prota",
-    unit: "Studios",
+    name: "",
+    unit: "",
     org:  "Prota Studios",
     lang: "en",
-    logo: "<svg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg' aria-label='Prota Studios'><path d='M16 2l3.4 8.4L28 12l-6.2 6 1.4 8.4L16 22.6 8.8 26.4 10.2 18 4 12l8.6-1.6z' fill='#f3ecdd'/></svg>",
+    logo: { src: "assets/prota-logo.png" },   // real Prota Studios wordmark (protastudios.com)
     favicon: "favicon.svg",
     tokens: {
       accent: "#c9a15a", accentStrong: "#a8823c", accentSoft: "#f3ead6",

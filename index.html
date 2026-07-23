@@ -911,6 +911,12 @@
   applyHashRoute();
   window.addEventListener('hashchange', applyHashRoute);
 </script>
+<!-- brand-mark override: the Prota Studios logo is a wide wordmark PNG; show it at
+     natural width and invert it to white on the dark sidebar. -->
+<style>
+  .hub-brand .brand-mark{width:auto;height:auto}
+  .hub-brand .brand-mark img{height:19px;width:auto;filter:brightness(0) invert(1);opacity:.95}
+</style>
 <!-- review-widget (feature_version 1.3.0) — inert by default; only a floating
      "Comments" button until ?review=1. Config global + labels in review.config.js. -->
 <script src="review.config.js"></script>
