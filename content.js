@@ -62,8 +62,8 @@ window.HUB = {
   sitepane: `
       <p class="sitepane__lede">A working prototype of the Midrata microsite, built in the brand derived from midrata.com (black canvas, forest photography, Styrene-style uppercase). Every page and the reservation flow are clickable.</p>
       <p class="sitepane__h">What it contains</p>
-      <div class="sp-point"><b>Two articles</b><span>One per value proposition. Cash-flow ("Income you don't have to manage") for the warm niche; anti-establishment ("Built for a different century") for the broad audience. Article-led ads point here.</span></div>
-      <div class="sp-point"><b>Two landing pages</b><span>Same two value propositions, headline swapped, one fake-door reservation each. Direct ads point straight here; articles lead here.</span></div>
+      <div class="sp-point"><b>Two articles</b><span>One per message. Cash-flow ("Income you don't have to manage") for the warm niche; anti-establishment ("Built for a different century") for the broad audience. Each article-led ad points to its article.</span></div>
+      <div class="sp-point"><b>One shared landing page</b><span>Both articles lead here. It carries both messages, the offering (flywheel + planned membership benefits), and a single fake-door reservation.</span></div>
       <div class="sp-point"><b>Legally safe</b><span>Every CTA is a soft-commitment reservation. No buy, invest, purchase, presale, or price. Copy pending General Counsel sign-off.</span></div>
       <p class="sitepane__kicker">The whole cluster, ads to reservations, is mapped in Content cluster.</p>
   `,
@@ -76,7 +76,7 @@ window.HUB = {
       { view: "forecast",  label: "Lead forecast",    icon: IC.chart },
     ]},
     { section: "Creative & funnel", items: [
-      { view: "ads",       label: "Meta ad sets",     icon: IC.send,   badge: 4 },
+      { view: "ads",       label: "Meta ad sets",     icon: IC.send,   badge: 2 },
       { view: "cluster",   label: "Content cluster",  icon: IC.nodes },
       { view: "website",   label: "Microsite",        icon: IC.window },
       { view: "social",    label: "Organic layer",    icon: IC.chat,   badge: 3 },
@@ -95,9 +95,9 @@ window.HUB = {
     intro:      { title: "Overview", sub: "A behavioral demand signal, built to move a skeptical investor", open: WEB, openLabel: "Open midrata.com ↗" },
     recs:       { title: "The test design", sub: "Two audiences, two messages, one fake-door funnel" },
     forecast:   { title: "Lead forecast", sub: "Modeled from financial and crypto-vertical Meta benchmarks", tbBadge: "Vertical model" },
-    ads:        { title: "Meta ad sets", sub: "Two messages, two routes: to an article, or straight to the landing page" },
+    ads:        { title: "Meta ad sets", sub: "Two messages, each article-led: ad to article to the shared landing page" },
     cluster:    { title: "Content cluster", sub: "How the ads, articles and landing pages connect, per value proposition" },
-    website:    { title: "Microsite", sub: "Articles map to the ads and lead to value-proposition landing pages", open: "https://2-human.github.io/midrata-public-microsite/", openLabel: "Open the microsite ↗", tbBadge: "Prototype", infoPane: true },
+    website:    { title: "Microsite", sub: "Articles map to the ads and lead to one shared landing page", open: "https://2-human.github.io/midrata-public-microsite/", openLabel: "Open the microsite ↗", tbBadge: "Prototype", infoPane: true },
     social:     { title: "Organic layer", sub: "Existing Substack and video content, repurposed as top of funnel" },
     crm:        { title: "Reservations", sub: "Every reservation traced to its ad set, with self-reported investment range" },
     compliance: { title: "Compliance & standards", sub: "The legal gate, and the web-quality standards the funnel is built to", tbBadge: "GC sign-off required" },
@@ -349,51 +349,31 @@ window.HUB = {
 
     ads: `
     <div class="ads">
-      <h1>Meta ad sets: two messages, two routes</h1>
-      <p class="lede">Each value proposition runs in two creative routes we can compare: an <strong>article-led</strong> ad that sends cold traffic to a microsite article first, and a <strong>direct</strong> ad that goes straight to that value proposition's landing page. Same message, different depth of warm-up, so we learn whether the article earns its click. Creative is dark-forest per the Midrata brand. All copy is placeholder pending General Counsel sign-off; no promised return figures.</p>
+      <h1>Meta ad sets: two messages, one destination</h1>
+      <p class="lede">Both value propositions run as <strong>article-led</strong> ads: each sends traffic to its microsite article, which then leads to the shared landing page. This warms cold traffic with the idea before asking for anything. Creative is bright-forest per the Midrata brand. All copy is placeholder pending General Counsel sign-off; no promised return figures.</p>
       <div class="ad-grid">
         <div>
-          <p class="ad-label">Message A &middot; Cash-flow &middot; <b>route: &rarr; Article</b></p>
+          <p class="ad-label">Message A &middot; Cash-flow &middot; <b>&rarr; Article</b></p>
           <div class="fb">
             <div class="fb__head"><div class="fb__avatar"></div><div class="fb__who"><b>Midrata</b><span>Sponsored &middot; &#127760;</span></div></div>
             <div class="fb__text">What if your money paid you every week? 💸 No property to manage, no huge upfront capital. Here is what it actually means for an asset to pay you.</div>
-            <div class="fb__media"><img src="${IMG}" alt="Midrata forest creative"></div>
-            <div class="fb__link"><div class="lk"><small>learn.midrata.com</small><b>Income you don't have to manage</b><span>A 4-minute read.</span></div><a class="fb__cta" href="https://2-human.github.io/midrata-public-microsite/article-cashflow.html" target="_blank" rel="noopener">Read More</a></div>
+            <div class="fb__media"><img src="https://2-human.github.io/midrata-public-microsite/assets/cf-article.jpg" alt="Midrata sunlit forest creative"></div>
+            <div class="fb__link"><div class="lk"><small>learn.midrata.com</small><b>Income you don't have to manage</b><span>A 5-minute read.</span></div><a class="fb__cta" href="https://2-human.github.io/midrata-public-microsite/article-cashflow.html" target="_blank" rel="noopener">Read More</a></div>
             <div class="fb__react"><span>&#128077; Like</span><span>&#128172; Comment</span><span>&#10150; Share</span></div>
           </div>
         </div>
         <div>
-          <p class="ad-label">Message A &middot; Cash-flow &middot; <b>route: &rarr; Landing page</b></p>
+          <p class="ad-label blue">Message B &middot; Anti-establishment &middot; <b>&rarr; Article</b></p>
           <div class="fb">
             <div class="fb__head"><div class="fb__avatar"></div><div class="fb__who"><b>Midrata</b><span>Sponsored &middot; &#127760;</span></div></div>
-            <div class="fb__text">Income you don't have to manage. 🌲 A member-owned pool of real-world assets, streamed back to you and built to be spent. Reserve your place in early access.</div>
-            <div class="fb__media"><img src="${IMG}" alt="Midrata forest creative"></div>
-            <div class="fb__link"><div class="lk"><small>learn.midrata.com &middot; early access</small><b>Reserve your place</b><span>No payment today.</span></div><a class="fb__cta primary" href="https://2-human.github.io/midrata-public-microsite/lp-cashflow.html" target="_blank" rel="noopener">Reserve</a></div>
-            <div class="fb__react"><span>&#128077; Like</span><span>&#128172; Comment</span><span>&#10150; Share</span></div>
-          </div>
-        </div>
-        <div>
-          <p class="ad-label blue">Message B &middot; Anti-establishment &middot; <b>route: &rarr; Article</b></p>
-          <div class="fb">
-            <div class="fb__head"><div class="fb__avatar"></div><div class="fb__who"><b>Midrata</b><span>Sponsored &middot; &#127760;</span></div></div>
-            <div class="fb__text">Taxes, inflation, debt. For most people that is extraction, not accident. 🔥 Read why the old system stopped working, and what replaces it.</div>
-            <div class="fb__media"><img src="${IMG}" alt="Midrata forest creative"></div>
-            <div class="fb__link"><div class="lk"><small>learn.midrata.com</small><b>Built for a different century</b><span>A 4-minute read.</span></div><a class="fb__cta" href="https://2-human.github.io/midrata-public-microsite/article-freedom.html" target="_blank" rel="noopener">Read More</a></div>
-            <div class="fb__react"><span>&#128077; Like</span><span>&#128172; Comment</span><span>&#10150; Share</span></div>
-          </div>
-        </div>
-        <div>
-          <p class="ad-label blue">Message B &middot; Anti-establishment &middot; <b>route: &rarr; Landing page</b></p>
-          <div class="fb">
-            <div class="fb__head"><div class="fb__avatar"></div><div class="fb__who"><b>Midrata</b><span>Sponsored &middot; &#127760;</span></div></div>
-            <div class="fb__text">The system wasn't built for you. 🌲 A member-owned alternative grounded in real-world assets. Let's build something better. Reserve your place.</div>
-            <div class="fb__media"><img src="${IMG}" alt="Midrata forest creative"></div>
-            <div class="fb__link"><div class="lk"><small>learn.midrata.com &middot; early access</small><b>Reserve your place</b><span>No payment today.</span></div><a class="fb__cta primary" href="https://2-human.github.io/midrata-public-microsite/lp-freedom.html" target="_blank" rel="noopener">Reserve</a></div>
+            <div class="fb__text">Taxes, inflation, debt. For most people that is extraction, not accident. 🌤️ Read why the old system stopped working, and what replaces it.</div>
+            <div class="fb__media"><img src="https://2-human.github.io/midrata-public-microsite/assets/sys-article.jpg" alt="Midrata sunlit forest creative"></div>
+            <div class="fb__link"><div class="lk"><small>learn.midrata.com</small><b>Built for a different century</b><span>A 5-minute read.</span></div><a class="fb__cta" href="https://2-human.github.io/midrata-public-microsite/article-freedom.html" target="_blank" rel="noopener">Read More</a></div>
             <div class="fb__react"><span>&#128077; Like</span><span>&#128172; Comment</span><span>&#10150; Share</span></div>
           </div>
         </div>
       </div>
-      <p style="margin-top:1.4rem;font-size:.86rem;color:var(--ink-muted)">Four creatives here are the routing test (message &times; route). Crossed with the two audiences (warm niche, broad), that is the full ad-set grid; audience is held out of this view so the routing read stays clean. The article-led and direct routes both terminate at the same value-proposition landing page and its fake-door reservation. See the <b>Content cluster</b> for the full map.</p>
+      <p style="margin-top:1.4rem;font-size:.86rem;color:var(--ink-muted)">Two creatives, one per message, each article-led. Crossed with the two audiences (warm niche, broad) that is the four-cell ad-set grid; audience is held out of this view so the message read stays clean. Both articles lead to the <b>same</b> landing page, where both messages and the full offering live, ending at one fake-door reservation. See the <b>Content cluster</b> for the full map.</p>
     </div>
   `,
 
@@ -417,12 +397,12 @@ window.HUB = {
           <div style='border:1px solid rgba(255,255,255,.14);padding:1.6rem;background:linear-gradient(180deg,rgba(36,56,42,.28),transparent)'>
             <p style='text-transform:uppercase;letter-spacing:.2em;font-size:.66rem;color:#8CA17A;margin:0 0 .6rem'>Cash flow</p>
             <b style='text-transform:uppercase;letter-spacing:.06em;font-size:1.1rem'>Income you don't have to manage</b>
-            <p style='color:#9a9a92;font-size:.9rem'>Article &rarr; cash-flow landing page. For the warm niche.</p>
+            <p style='color:#9a9a92;font-size:.9rem'>Article, then the shared landing page. For the warm niche.</p>
           </div>
           <div style='border:1px solid rgba(255,255,255,.14);padding:1.6rem;background:linear-gradient(180deg,rgba(36,56,42,.28),transparent)'>
             <p style='text-transform:uppercase;letter-spacing:.2em;font-size:.66rem;color:#8CA17A;margin:0 0 .6rem'>The system</p>
             <b style='text-transform:uppercase;letter-spacing:.06em;font-size:1.1rem'>Built for a different century</b>
-            <p style='color:#9a9a92;font-size:.9rem'>Article &rarr; anti-establishment landing page. For the broad audience.</p>
+            <p style='color:#9a9a92;font-size:.9rem'>Article, then the shared landing page. For the broad audience.</p>
           </div>
         </div>
       </section>
@@ -440,53 +420,41 @@ window.HUB = {
     cluster: `
     <div class="cluster">
       <h1>Content cluster: the demand-test funnel</h1>
-      <p class="lede">Two value propositions, each with its own <strong>article</strong> and its own <strong>landing page</strong>, on the microsite. Every message runs two ad routes: an <strong>article-led</strong> ad that warms cold traffic with the article first, and a <strong>direct</strong> ad straight to the landing page. Both routes end at the same fake-door reservation, which feeds the <strong>CRM</strong> with the ad set attached.</p>
+      <p class="lede">Two messages, each with its own <strong>ad</strong> and its own <strong>article</strong>. Every ad is article-led: it sends traffic to its article, which then leads to <strong>one shared landing page</strong> where both messages and the full offering live. That page's fake-door reservation feeds the <strong>CRM</strong>, tagged with the ad it came from.</p>
       <div class="diagram">
-        <svg viewBox="0 0 1200 470" xmlns="http://www.w3.org/2000/svg">
+        <svg viewBox="0 0 1200 360" xmlns="http://www.w3.org/2000/svg">
           <defs>
             <marker id="arw" markerWidth="9" markerHeight="9" refX="6.5" refY="3" orient="auto"><path d="M0,0 L6.5,3 L0,6 Z" fill="#b8b8c0"/></marker>
             <marker id="arwC" markerWidth="9" markerHeight="9" refX="6.5" refY="3" orient="auto"><path d="M0,0 L6.5,3 L0,6 Z" fill="#0f7d74"/></marker>
           </defs>
-          <text class="col-label" x="24" y="26">Meta ads &middot; 2 routes each</text>
-          <text class="col-label" x="358" y="26">Microsite articles</text>
-          <text class="col-label" x="640" y="26">Landing pages</text>
-          <text class="col-label" x="980" y="26">CRM</text>
+          <text class="col-label" x="24" y="26">Meta ads</text>
+          <text class="col-label" x="356" y="26">Microsite articles</text>
+          <text class="col-label" x="676" y="26">Shared landing page</text>
+          <text class="col-label" x="996" y="26">CRM</text>
 
-          <!-- wires: cash-flow track -->
-          <path class="wire" marker-end="url(#arw)" d="M312 84 C 340 84, 336 96, 360 96"/>
-          <path class="wire" marker-end="url(#arw)" d="M336 150 C 470 150, 520 118, 632 118"/>
-          <path class="wire" marker-end="url(#arw)" d="M312 150 C 470 150, 520 118, 632 118"/>
-          <path class="wire" marker-end="url(#arw)" d="M604 106 C 618 106, 620 112, 632 112"/>
-          <!-- wires: anti-establishment track -->
-          <path class="wire" marker-end="url(#arw)" d="M312 300 C 340 300, 336 300, 360 300"/>
-          <path class="wire" marker-end="url(#arw)" d="M336 356 C 470 356, 520 330, 632 330"/>
-          <path class="wire" marker-end="url(#arw)" d="M312 356 C 470 356, 520 330, 632 330"/>
-          <path class="wire" marker-end="url(#arw)" d="M604 318 C 618 318, 620 324, 632 324"/>
-          <!-- landing pages -> CRM -->
-          <path class="wire--crm" marker-end="url(#arwC)" d="M872 118 C 920 118, 930 210, 972 210"/>
-          <path class="wire--crm" marker-end="url(#arwC)" d="M872 330 C 920 330, 930 250, 972 250"/>
+          <!-- wires -->
+          <path class="wire" marker-end="url(#arw)" d="M314 96 L 340 97"/>
+          <path class="wire" marker-end="url(#arw)" d="M314 276 L 340 287"/>
+          <path class="wire" marker-end="url(#arw)" d="M590 97 C 628 97, 622 150, 660 150"/>
+          <path class="wire" marker-end="url(#arw)" d="M590 287 C 628 287, 622 205, 660 205"/>
+          <path class="wire--crm" marker-end="url(#arwC)" d="M910 177 L 980 180"/>
 
-          <!-- CASH-FLOW: ads -->
-          <foreignObject x="24" y="52" width="290" height="60"><div xmlns="http://www.w3.org/1999/xhtml" class="node node--case"><a class="node__link" href="#ads"><span class="node__tag">Cash-flow &middot; article-led</span><span class="node__title">Ad &rarr; article</span></a></div></foreignObject>
-          <foreignObject x="24" y="120" width="290" height="60"><div xmlns="http://www.w3.org/1999/xhtml" class="node node--case"><a class="node__link" href="#ads"><span class="node__tag">Cash-flow &middot; direct</span><span class="node__title">Ad &rarr; landing page</span></a></div></foreignObject>
-          <!-- CASH-FLOW: article -->
-          <foreignObject x="360" y="66" width="244" height="86"><a xmlns="http://www.w3.org/1999/xhtml" class="node node--lp node__link" href="https://2-human.github.io/midrata-public-microsite/article-cashflow.html" target="_blank" rel="noopener"><span class="node__tag">Article</span><span class="node__title">Income you don't have to manage</span><span class="node__meta">learn.midrata.com &rarr;</span></a></foreignObject>
-          <!-- CASH-FLOW: LP -->
-          <foreignObject x="632" y="76" width="240" height="86"><a xmlns="http://www.w3.org/1999/xhtml" class="node node--lp node__link" href="https://2-human.github.io/midrata-public-microsite/lp-cashflow.html" target="_blank" rel="noopener"><span class="node__tag">Landing page</span><span class="node__title">What if your money paid you every week?</span><span class="node__meta">Fake-door reserve &rarr;</span></a></foreignObject>
+          <!-- ads -->
+          <foreignObject x="24" y="64" width="290" height="64"><div xmlns="http://www.w3.org/1999/xhtml" class="node node--case"><a class="node__link" href="#ads"><span class="node__tag">Cash-flow &middot; article-led</span><span class="node__title">Ad &rarr; article</span></a></div></foreignObject>
+          <foreignObject x="24" y="244" width="290" height="64"><div xmlns="http://www.w3.org/1999/xhtml" class="node node--case"><a class="node__link" href="#ads"><span class="node__tag">Anti-establishment &middot; article-led</span><span class="node__title">Ad &rarr; article</span></a></div></foreignObject>
 
-          <!-- ANTI-ESTABLISHMENT: ads -->
-          <foreignObject x="24" y="268" width="290" height="60"><div xmlns="http://www.w3.org/1999/xhtml" class="node node--case"><a class="node__link" href="#ads"><span class="node__tag">Anti-establishment &middot; article-led</span><span class="node__title">Ad &rarr; article</span></a></div></foreignObject>
-          <foreignObject x="24" y="336" width="290" height="60"><div xmlns="http://www.w3.org/1999/xhtml" class="node node--case"><a class="node__link" href="#ads"><span class="node__tag">Anti-establishment &middot; direct</span><span class="node__title">Ad &rarr; landing page</span></a></div></foreignObject>
-          <!-- ANTI-ESTABLISHMENT: article -->
-          <foreignObject x="360" y="278" width="244" height="86"><a xmlns="http://www.w3.org/1999/xhtml" class="node node--lp node__link" href="https://2-human.github.io/midrata-public-microsite/article-freedom.html" target="_blank" rel="noopener"><span class="node__tag">Article</span><span class="node__title">Built for a different century</span><span class="node__meta">learn.midrata.com &rarr;</span></a></foreignObject>
-          <!-- ANTI-ESTABLISHMENT: LP -->
-          <foreignObject x="632" y="288" width="240" height="86"><a xmlns="http://www.w3.org/1999/xhtml" class="node node--lp node__link" href="https://2-human.github.io/midrata-public-microsite/lp-freedom.html" target="_blank" rel="noopener"><span class="node__tag">Landing page</span><span class="node__title">The system wasn't built for you</span><span class="node__meta">Fake-door reserve &rarr;</span></a></foreignObject>
+          <!-- articles -->
+          <foreignObject x="340" y="54" width="250" height="86"><a xmlns="http://www.w3.org/1999/xhtml" class="node node--lp node__link" href="https://2-human.github.io/midrata-public-microsite/article-cashflow.html" target="_blank" rel="noopener"><span class="node__tag">Article &middot; cash-flow</span><span class="node__title">Income you don't have to manage</span><span class="node__meta">learn.midrata.com &rarr;</span></a></foreignObject>
+          <foreignObject x="340" y="244" width="250" height="86"><a xmlns="http://www.w3.org/1999/xhtml" class="node node--lp node__link" href="https://2-human.github.io/midrata-public-microsite/article-freedom.html" target="_blank" rel="noopener"><span class="node__tag">Article &middot; the system</span><span class="node__title">Built for a different century</span><span class="node__meta">learn.midrata.com &rarr;</span></a></foreignObject>
+
+          <!-- shared landing page -->
+          <foreignObject x="660" y="112" width="250" height="130"><a xmlns="http://www.w3.org/1999/xhtml" class="node node--crm node__link" style="border-style:solid;cursor:pointer" href="https://2-human.github.io/midrata-public-microsite/lp.html" target="_blank" rel="noopener"><span class="node__tag">Landing page &middot; both messages</span><span class="node__title">Money you can actually use</span><span class="node__meta">Offering + fake-door reserve &rarr;</span></a></foreignObject>
 
           <!-- CRM -->
-          <foreignObject x="972" y="180" width="204" height="100"><a xmlns="http://www.w3.org/1999/xhtml" class="node node--crm node__link" style="border-style:solid;cursor:pointer" href="#crm"><span class="node__tag">CRM &middot; live</span><span class="node__title">Reservations</span><span class="node__meta">Tagged by ad set &middot; open &rarr;</span></a></foreignObject>
+          <foreignObject x="980" y="132" width="200" height="96"><a xmlns="http://www.w3.org/1999/xhtml" class="node node--crm node__link" style="border-style:solid;cursor:pointer" href="#crm"><span class="node__tag">CRM &middot; live</span><span class="node__title">Reservations</span><span class="node__meta">Tagged by ad &middot; open &rarr;</span></a></foreignObject>
         </svg>
       </div>
-      <div class="cluster-note"><strong>How it works:</strong> two ads per value proposition (one article-led, one direct) test whether the article earns its click. Cash-flow copy is tuned for the warm niche; anti-establishment for the broad audience. Both routes land on the same value-proposition page and its fake-door reservation, so every reservation reaches the CRM tagged with its ad set and self-reported investment range.</div>
+      <div class="cluster-note"><strong>How it works:</strong> one article-led ad per message. Cash-flow copy is tuned for the warm niche; anti-establishment for the broad audience. Each ad warms traffic with its article, then both articles lead to the same landing page, where both messages and the offering (the flywheel and planned membership benefits) sit above one fake-door reservation. Every reservation reaches the CRM tagged with the ad it came from and the visitor's self-reported investment range.</div>
     </div>
   `,
 
