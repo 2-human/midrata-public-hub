@@ -40,7 +40,7 @@ window.HUB = {
     org:  "Prota Studios",
     lang: "en",
     logo: { src: "assets/prota-logo.png" },   // real Prota Studios wordmark (protastudios.com)
-    favicon: "favicon.svg",
+    favicon: "assets/prota-favicon-large.png",
     tokens: {
       accent: "#c9a15a", accentStrong: "#a8823c", accentSoft: "#f3ead6",
       ink: "#12141d", ink2: "#1d2130", inkMuted: "rgba(18,20,29,.56)",
@@ -55,7 +55,7 @@ window.HUB = {
     proposalFor: "Midrata",
     foot: "Prota Studios.<br>Demand-test design for Midrata. Every surface here is a review candidate, not live creative. All copy is subject to General Counsel sign-off.",
   },
-  favicon: "favicon.svg",
+  favicon: "assets/prota-favicon-large.png",
   defaultView: "intro",
   WEB: WEB,
 
