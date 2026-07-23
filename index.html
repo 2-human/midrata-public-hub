@@ -500,6 +500,10 @@
 
 <div class="nav-overlay" id="navOverlay" onclick="closeNav()"></div>
 <main class="main">
+  <div class="ex-banner" role="note">
+    <span class="ex-tag">Example only</span>
+    <span>All creatives, imagery and copy in this hub are illustrative placeholders for review. Not final, and subject to General Counsel sign-off.</span>
+  </div>
   <div class="toolbar">
     <button class="tb-menu" id="tbMenu" onclick="toggleNav()" aria-label="Open menu">&#9776;</button>
     <span class="tb-title" id="tbTitle">Intro</span>
@@ -914,6 +918,8 @@
 <!-- brand-mark override: the Prota Studios logo is a wide wordmark PNG; show it at
      natural width and invert it to white on the dark sidebar. -->
 <style>
+  .ex-banner{display:flex;align-items:center;gap:.7rem;flex-wrap:wrap;padding:.55rem 1.25rem;background:#c9a15a;color:#241800;font-size:.83rem;font-weight:600;line-height:1.35;flex-shrink:0;border-bottom:1px solid rgba(0,0,0,.18)}
+  .ex-banner .ex-tag{font-size:.64rem;letter-spacing:.09em;text-transform:uppercase;font-weight:800;background:#0d1122;color:#f3ecdd;padding:.24rem .62rem;border-radius:999px;white-space:nowrap}
   .hub-brand .brand-mark{width:auto;height:auto}
   .hub-brand .brand-mark img{height:19px;width:auto;filter:brightness(0) invert(1);opacity:.95}
 </style>
