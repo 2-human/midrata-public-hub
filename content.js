@@ -97,7 +97,7 @@ window.HUB = {
     forecast:   { title: "Lead forecast", sub: "Modeled from financial and crypto-vertical Meta benchmarks", tbBadge: "Vertical model" },
     ads:        { title: "Meta ad sets", sub: "Two messages, each article-led: ad to article to the shared landing page" },
     cluster:    { title: "Content cluster", sub: "How the ads, articles and landing pages connect, per value proposition" },
-    website:    { title: "Microsite", sub: "Articles map to the ads and lead to one shared landing page", open: "https://2-human.github.io/midrata-public-microsite/", openLabel: "Open the microsite ↗", tbBadge: "Prototype", infoPane: true },
+    website:    { title: "Microsite", sub: "The standalone microsite, embedded live", open: "https://2-human.github.io/midrata-public-microsite/", openLabel: "Open the microsite ↗", tbBadge: "Live" },
     social:     { title: "Organic layer", sub: "Existing Substack and video content, repurposed as top of funnel" },
     crm:        { title: "Reservations", sub: "Every reservation traced to its ad set, with self-reported investment range" },
     compliance: { title: "Compliance & standards", sub: "The legal gate, and the web-quality standards the funnel is built to", tbBadge: "GC sign-off required" },
@@ -378,43 +378,13 @@ window.HUB = {
   `,
 
     website: `
-    <iframe title="Midrata microsite prototype" srcdoc="<!doctype html><meta charset='utf-8'><body style='margin:0;font-family:Archivo,Helvetica Neue,Arial,sans-serif;color:#fff;background:#000'>
-      <header style='display:flex;justify-content:space-between;align-items:center;height:60px;padding:0 2rem;border-bottom:1px solid rgba(255,255,255,.14)'>
-        <span style='font-weight:700;letter-spacing:.22em;font-size:1rem'>MIDRATA</span>
-        <span style='font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;opacity:.7'>Cash flow &nbsp;&nbsp; The system &nbsp;&nbsp; Reserve</span>
-      </header>
-      <section style='position:relative;min-height:360px;display:flex;align-items:flex-end;padding:2.5rem 2rem;background:linear-gradient(180deg,rgba(0,0,0,.82),rgba(0,0,0,.3) 40%,rgba(0,0,0,.95)),radial-gradient(120% 80% at 70% 20%,#33502F,#182617 45%,#050805)'>
-        <div>
-          <p style='text-transform:uppercase;letter-spacing:.24em;font-size:.72rem;color:#8CA17A;margin:0 0 1rem'>A next-generation wealth club</p>
-          <h1 style='text-transform:uppercase;letter-spacing:.04em;font-weight:700;font-size:2.6rem;line-height:1.08;margin:0'>Money you can<br>actually use.</h1>
-          <p style='max-width:52ch;font-size:1.05rem;line-height:1.5;color:#EDEFEA;margin-top:1.1rem'>Clear terms. Real utility. No hype. A member-owned way to hold and spend value, grounded in real-world assets rather than speculation.</p>
-          <span style='display:inline-block;margin-top:1.6rem;border:1px solid #fff;padding:.9rem 1.7rem;text-transform:uppercase;letter-spacing:.16em;font-size:.78rem;font-weight:600'>Reserve your place</span>
-        </div>
-      </section>
-      <section style='padding:2.5rem 2rem'>
-        <p style='text-transform:uppercase;letter-spacing:.24em;font-size:.72rem;color:#5F7355;margin:0 0 1rem'>Two ways in</p>
-        <div style='display:grid;grid-template-columns:1fr 1fr;gap:1.2rem'>
-          <div style='border:1px solid rgba(255,255,255,.14);padding:1.6rem;background:linear-gradient(180deg,rgba(36,56,42,.28),transparent)'>
-            <p style='text-transform:uppercase;letter-spacing:.2em;font-size:.66rem;color:#8CA17A;margin:0 0 .6rem'>Cash flow</p>
-            <b style='text-transform:uppercase;letter-spacing:.06em;font-size:1.1rem'>Income you don't have to manage</b>
-            <p style='color:#9a9a92;font-size:.9rem'>Article, then the shared landing page. For the warm niche.</p>
-          </div>
-          <div style='border:1px solid rgba(255,255,255,.14);padding:1.6rem;background:linear-gradient(180deg,rgba(36,56,42,.28),transparent)'>
-            <p style='text-transform:uppercase;letter-spacing:.2em;font-size:.66rem;color:#8CA17A;margin:0 0 .6rem'>The system</p>
-            <b style='text-transform:uppercase;letter-spacing:.06em;font-size:1.1rem'>Built for a different century</b>
-            <p style='color:#9a9a92;font-size:.9rem'>Article, then the shared landing page. For the broad audience.</p>
-          </div>
-        </div>
-      </section>
-      <section style='background:#fff;color:#000;padding:2rem'>
-        <p style='background:#F2F1EC;border:1px solid #d9d8cf;padding:1rem;font-size:.9rem;margin:0 0 1rem'><b>Midrata isn't available in your area yet.</b> Membership requires securities registration we're completing now. Join the early-access list and we'll notify you the moment it opens.</p>
-        <input placeholder='Full name' style='width:100%;box-sizing:border-box;padding:.7rem;margin-bottom:.5rem;border:1px solid #cfcfc8'>
-        <input placeholder='Email' style='width:100%;box-sizing:border-box;padding:.7rem;margin-bottom:.5rem;border:1px solid #cfcfc8'>
-        <select style='width:100%;box-sizing:border-box;padding:.7rem;margin-bottom:.8rem;border:1px solid #cfcfc8'><option>Annual amount you might consider</option><option>Under $5,000</option><option>$25,000 or more</option></select>
-        <span style='display:inline-block;border:1px solid #000;padding:.75rem 1.4rem;text-transform:uppercase;letter-spacing:.16em;font-size:.72rem;font-weight:600'>Join early access</span>
-        <p style='font-size:.7rem;color:#7a7a70;margin-top:.9rem'>Not an offer to sell or a solicitation to buy a security. Wording subject to legal review. Meta pixel fires here for per-ad-set attribution.</p>
-      </section>
-    </body>"></iframe>
+    <div style="display:flex;flex-direction:column;height:100%">
+      <div style="display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap;padding:.6rem clamp(1rem,4vw,2rem);background:#0d1122;color:#f3ecdd;border-bottom:1px solid rgba(255,255,255,.12);font-size:.82rem;line-height:1.45">
+        <span><b style="color:#c9a15a;font-weight:700">Live microsite</b> &nbsp;&middot;&nbsp; The standalone site, embedded exactly as it ships. Article-led ads point to the two articles; both lead to one shared landing page, and the reservation form is docked at the bottom of every page.</span>
+        <a href="https://2-human.github.io/midrata-public-microsite/" target="_blank" rel="noopener" style="color:#c9a15a;text-decoration:none;white-space:nowrap;border:1px solid rgba(201,161,90,.5);padding:.4rem .85rem;border-radius:6px">Open in new tab &#8599;</a>
+      </div>
+      <iframe src="https://2-human.github.io/midrata-public-microsite/" title="Midrata microsite (live)" style="flex:1;min-height:0;width:100%;border:0;background:#fff"></iframe>
+    </div>
   `,
 
     cluster: `
